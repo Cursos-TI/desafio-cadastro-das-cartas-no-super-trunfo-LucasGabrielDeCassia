@@ -98,7 +98,8 @@ int main() {
     printf("Pib per capita: %.f\n", pib_per_capita);        //Exibição do pib per capita apos calculo
 
     // Exibição da segunda carta e repetição do processo
-    printf("\nCarta 2\n");                                  //Quebra de linha para separar as cartas
+    printf("\n");                                           //Quebra de linha para separar as cartas
+    printf("\nCarta 2\n");                                  
     printf("Estado: %s\n", estado2);
     printf("Código: %s\n", codigo2);
     printf("Nome: %s\n", nomecida2);
