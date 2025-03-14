@@ -3,7 +3,7 @@
 #include <locale.h> // Necessário para usar acentuação
 
 int main() {
-    setlocale(LC_ALL, "Portuguese"); // 🔹 Adicionado para aceitar acentuação
+    setlocale(LC_ALL, "Portuguese"); //Adicionado para aceitar acentuação
 
     char estado[20], estado2[20];
     char codigo[5], codigo2[5];
@@ -50,10 +50,6 @@ int main() {
 
 
 
-
-
-
-
     // Cadastro da segunda carta (repetição do processo)
     printf("\n");
     printf("Agora os dados para a segunda carta\n");
@@ -87,6 +83,7 @@ int main() {
     getchar();  
 
     // Exibição das cartas cadastradas
+    // Exibição da primeira carta
     printf("\nCarta 1\n");
     printf("Estado: %s\n", estado);
     printf("Código: %s\n", codigo);
@@ -94,14 +91,14 @@ int main() {
     printf("População: %d\n", populacao);
     printf("Área: %.f km²\n", area);
     printf("Pib: %.f\n", pib);
-    printf("Pontos turísticos: %d\n", numerosturisticos);
-    densidade_popu = (float) populacao / area;
-    pib_per_capita = (float) pib / populacao;
-    printf("Densidade populacional: %.f\n", densidade_popu);
-    printf("Pib per capita: %.f\n", pib_per_capita);
+    printf("Pontos turísticos: %d\n", numerosturisticos);   
+    densidade_popu = (float) populacao / area;              //Cálculo da densidade populacional e conversão para float
+    pib_per_capita = (float) pib / populacao;               //Cálculo do pib per capita e conversão para float
+    printf("Densidade populacional: %.f\n", densidade_popu);//Exibição da densidade populacional apos calculo
+    printf("Pib per capita: %.f\n", pib_per_capita);        //Exibição do pib per capita apos calculo
 
-    // Exibição da segunda carta
-    printf("\nCarta 2\n");
+    // Exibição da segunda carta e repetição do processo
+    printf("\nCarta 2\n");                                  //Quebra de linha para separar as cartas
     printf("Estado: %s\n", estado2);
     printf("Código: %s\n", codigo2);
     printf("Nome: %s\n", nomecida2);
